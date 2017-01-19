@@ -1,0 +1,21 @@
+<h2 [textContent]="coursesheading"></h2>
+<strong>
+  {{ courseSubTile }}
+
+  </strong>
+
+<li *ngFor="let course of courses">
+  {{ course }}
+</li>
+<img src="{{ imgUrl }}" alt="" width="200" height="200">
+<img [src]="imgUrl" alt="" width="200" height="200">
+<img bind-src="imgUrl" alt="" width="200" height="200">
+<button [style.backgroundColor]="'blue'">Submit Data</button>
+<div (click)="clickDivFunction()">
+  <button (click)="clickButtonFunction($event)" appChangeColor>Submit Data </button>
+</div>
+
+
+<input type="text" [value]="courseSubTile" (input)="courseSubTile=$event.target.value">
+<input type="text" appAutoGrew>
+<app-star-icon (change)="changesInstarIconComponents($event)"></app-star-icon>

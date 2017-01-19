@@ -1,0 +1,5 @@
+<span class="glyphicon"   [class.glyphicon-heart]="isFavourite" [style.color]="isFavourite ? 'deeppink' : '#CCC'"  
+  (click)="likeAndDisLikeHeartFunction()"></span>
+<span class="glyphicon" [class.glyphicon-heart]="!isFavourite" [style.color]="!isFavourite ? '#CCC' : 'deeppink'" 
+(click)="likeAndDisLikeHeartFunction()">
+</span>

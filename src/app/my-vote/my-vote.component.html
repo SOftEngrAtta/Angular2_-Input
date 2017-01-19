@@ -1,0 +1,7 @@
+<div [style.padding.%]='2'>
+  <span class="glyphicon glyphicon-menu-up"
+   (click)="myVoteUpFunction($event)" [class.activeClass]="isActiveUp"></span><br>
+  <span>{{ voteCount }}</span><br>
+  <span class="glyphicon glyphicon-menu-down"
+  (click)="myVoteDownFunction($event)" [class.activeDownClass]="isActiveDown"></span>
+</div>  
